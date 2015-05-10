@@ -93,8 +93,8 @@ class MambleBot
 		file =	File.join("#{msg}.mp3")
 		add = system( "mpc add #{file}" )           # Add sound to MPC queue
 		if add
-			play = system( "mpc play 1" )           # Play sound in MPC queue
-			rm = system( "mpc del 1" )              # Remove sound from MPC queue
+			system( "mpc play 1" )           # Play sound in MPC queue
+			system( "mpc del 1" )              # Remove sound from MPC queue
 		else                                        # When no file with that name exists
 			send("No File Found!")
 		end
