@@ -1,0 +1,6 @@
+mumble.log
+audio/
+.DS_Store
+.bundle/
+mumblebot5000_cert/
+ServerInfo.rb
